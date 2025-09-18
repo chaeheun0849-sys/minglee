@@ -14,7 +14,15 @@ body{font-family:Inter,Pretendard,sans-serif;background:#fff}
 
 /* Hero */
 .hero{position:relative;min-height:720px;height:90vh;display:block;overflow:visible;padding-bottom:320px}
-.hero .bg{position:absolute;inset:0;background:url('assets/main-bg.jpg') center 50000%/cover no-repeat;z-index:-2}
+.hero .bg{
+  position:absolute;
+  inset:0;
+  background-image: url('assets/main-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 20% !important;
+  z-index:-2
+}
 .hero::before{content:"";position:absolute;inset:0;z-index:-1;background:
   radial-gradient(60% 80% at 80% 70%, rgba(165,209,255,.55) 0%, rgba(255,255,255,0) 60%),
   linear-gradient(180deg, rgba(255,255,255,0) 35%, rgba(255,210,240,.35) 60%, rgba(200,230,255,.45) 85%);
